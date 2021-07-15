@@ -29,14 +29,14 @@ abstract class Executor {
   });
 
   Cancelable<O> execute<A, B, C, D, O>({
-    A arg1,
-    B arg2,
-    C arg3,
-    D arg4,
-    Fun1<A, O> fun1,
-    Fun2<A, B, O> fun2,
-    Fun3<A, B, C, O> fun3,
-    Fun4<A, B, C, D, O> fun4,
+    A? arg1,
+    B? arg2,
+    C? arg3,
+    D? arg4,
+    Fun1<A, O>? fun1,
+    Fun2<A, B, O>? fun2,
+    Fun3<A, B, C, O>? fun3,
+    Fun4<A, B, C, D, O>? fun4,
     WorkPriority priority = WorkPriority.high,
   });
 }
